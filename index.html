@@ -269,7 +269,8 @@
           <span class="tag">Java</span>
           <span class="tag">Java Swing</span>
         </div>
-        <button class="modal-btn-details" onclick="openModal('modal-java')">Détails →</button>
+        <button class="modal-btn-details" onclick="openModal('modal-java')" data-en="Details →"
+          data-fr="Détails →">Détails →</button>
       </div>
 
       <div class="project-card">
@@ -291,7 +292,8 @@
           <span class="tag">SQLite</span>
           <span class="tag">Raspberry Pi</span>
         </div>
-        <button class="modal-btn-details" onclick="openModal('modal-bdd')">Détails →</button>
+        <button class="modal-btn-details" onclick="openModal('modal-bdd')" data-en="Details →"
+          data-fr="Détails →">Détails →</button>
       </div>
 
       <div class="project-card">
@@ -313,7 +315,8 @@
           <span class="tag">C++</span>
           <span class="tag">Algorithmique</span>
         </div>
-        <button class="modal-btn-details" onclick="openModal('modal-cwad')">Détails →</button>
+        <button class="modal-btn-details" onclick="openModal('modal-cwad')" data-en="Details →"
+          data-fr="Détails →">Détails →</button>
       </div>
 
       <div class="project-card">
@@ -334,7 +337,33 @@
           <span class="tag">Collaboration</span>
           <span class="tag">Jan 2025</span>
         </div>
-        <button class="modal-btn-details" onclick="openModal('modal-cgj')">Détails →</button>
+        <button class="modal-btn-details" onclick="openModal('modal-cgj')" data-en="Details →"
+          data-fr="Détails →">Détails →</button>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🐍</div>
+        <div class="project-title" data-en="Performative Male" data-fr="Performative Male">Performative Male</div>
+        <div class="project-desc"
+          data-en="A solo Snake-inspired game. Collect the matcha, grow the trail. Absurd concept, classic mechanics."
+          data-fr="Un jeu inspiré de Snake, fait en solo. Collecte le matcha, fais grandir le trail. Concept absurde, mécanique classique.">
+          Un jeu inspiré de Snake, fait en solo. Collecte le matcha, fais grandir le trail. Concept absurde, mécanique
+          classique.
+        </div>
+        <div class="project-features">
+          <span class="project-feature" data-en="Built solo from scratch"
+            data-fr="Développé en solo, de A à Z">Développé en solo, de A à Z</span>
+          <span class="project-feature" data-en="Game logic, score and collision handling"
+            data-fr="Logique de jeu, gestion du score et des collisions">Logique de jeu, gestion du score et des
+            collisions</span>
+        </div>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Game Dev</span>
+        </div>
+        <button class="modal-btn-details" onclick="openModal('modal-snake')" data-en="Details →"
+          data-fr="Détails →">Détails →</button>
       </div>
 
     </div>
@@ -346,21 +375,36 @@
   <div class="modal-overlay" id="modal-java" onclick="closeModalOutside(event, 'modal-java')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-java')">✕</button>
-      <div class="modal-title">Application de Gestion Java</div>
+      <div class="modal-title" data-en="Java Management Application" data-fr="Application de Gestion Java">Application
+        de Gestion Java</div>
       <div class="modal-body">
-        <p>Dans le cadre du second semestre, j'ai développé avec mon groupe une application Java destinée à la gestion
+        <p data-en="During the second semester, my group and I built a Java application for managing student registrations. The project covered both a graphical interface with Java Swing and data handling via a relational database. The goal was to deliver something functional, structured and ergonomic — not just code that runs."
+          data-fr="Dans le cadre du second semestre, j'ai développé avec mon groupe une application Java destinée à la gestion d'inscriptions étudiantes. Le projet couvrait à la fois la conception d'une interface graphique avec Java Swing et la gestion des données via une base relationnelle. L'objectif était de produire une application fonctionnelle, structurée et ergonomique — pas juste du code qui tourne.">
+          Dans le cadre du second semestre, j'ai développé avec mon groupe une application Java destinée à la gestion
           d'inscriptions étudiantes. Le projet couvrait à la fois la conception d'une interface graphique avec Java
           Swing et la gestion des données via une base relationnelle. L'objectif était de produire une application
-          fonctionnelle, structurée et ergonomique — pas juste du code qui tourne.</p>
+          fonctionnelle, structurée et ergonomique — pas juste du code qui tourne.
+        </p>
         <ul class="modal-list">
-          <li>Implémentation complète back-end et front-end via Java Swing</li>
-          <li>Architecture orientée objet avec séparation claire des responsabilités</li>
-          <li>Travail approfondi sur l'ergonomie et l'interaction humain-machine</li>
-          <li>Gestion des données et contrôles de saisie robustes</li>
+          <li data-en="Full back-end and front-end implementation via Java Swing"
+            data-fr="Implémentation complète back-end et front-end via Java Swing">Implémentation complète back-end et
+            front-end via Java Swing</li>
+          <li data-en="Object-oriented architecture with clear separation of responsibilities"
+            data-fr="Architecture orientée objet avec séparation claire des responsabilités">Architecture orientée objet
+            avec séparation claire des responsabilités</li>
+          <li data-en="In-depth work on ergonomics and human-machine interaction"
+            data-fr="Travail approfondi sur l'ergonomie et l'interaction humain-machine">Travail approfondi sur
+            l'ergonomie et l'interaction humain-machine</li>
+          <li data-en="Data management and robust input validation"
+            data-fr="Gestion des données et contrôles de saisie robustes">Gestion des données et contrôles de saisie
+            robustes</li>
         </ul>
         <img src="assets/transverseSS.jpeg" alt="Application de Gestion Java" style="width:100%; margin: 28px 0;">
-        <p>Ce projet m'a permis de confronter mes compétences à un développement applicatif complet — de la logique
-          métier à l'interface utilisateur — dans un contexte d'équipe avec des contraintes réelles.</p>
+        <p data-en="This project challenged me to tackle a complete application — from business logic to user interface — in a team setting with real constraints."
+          data-fr="Ce projet m'a permis de confronter mes compétences à un développement applicatif complet — de la logique métier à l'interface utilisateur — dans un contexte d'équipe avec des contraintes réelles.">
+          Ce projet m'a permis de confronter mes compétences à un développement applicatif complet — de la logique
+          métier à l'interface utilisateur — dans un contexte d'équipe avec des contraintes réelles.
+        </p>
       </div>
     </div>
   </div>
@@ -369,20 +413,36 @@
   <div class="modal-overlay" id="modal-bdd" onclick="closeModalOutside(event, 'modal-bdd')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-bdd')">✕</button>
-      <div class="modal-title">Administration Système &amp; BDD</div>
+      <div class="modal-title" data-en="System & Database Administration" data-fr="Administration Système &amp; BDD">
+        Administration Système &amp; BDD</div>
       <div class="modal-body">
-        <p>Ce projet s'est déroulé en deux phases. La première, individuelle, consistait à rencontrer un interlocuteur
+        <p data-en="This project ran in two phases. The first, individual, involved meeting a real client, analysing their needs and producing a conceptual data model (CDM), a data dictionary and a summary. The second phase, in pairs, focused on the technical implementation using SQLite."
+          data-fr="Ce projet s'est déroulé en deux phases. La première, individuelle, consistait à rencontrer un interlocuteur réel, analyser ses besoins et produire un modèle conceptuel de données (MCD), un dictionnaire de données et une synthèse. La seconde phase, en binôme, portait sur l'implémentation technique via SQLite.">
+          Ce projet s'est déroulé en deux phases. La première, individuelle, consistait à rencontrer un interlocuteur
           réel, analyser ses besoins et produire un modèle conceptuel de données (MCD), un dictionnaire de données et
-          une synthèse. La seconde phase, en binôme, portait sur l'implémentation technique via SQLite.</p>
+          une synthèse. La seconde phase, en binôme, portait sur l'implémentation technique via SQLite.
+        </p>
         <ul class="modal-list">
-          <li>Conception du MCD, du schéma relationnel et des règles de gestion</li>
-          <li>Scripts SQL de création, d'insertion et d'interrogation des données</li>
-          <li>Installation et configuration de Linux sur Raspberry Pi</li>
-          <li>Utilisation d'un générateur de données pour simuler un environnement réaliste</li>
-          <li>Rédaction d'un rapport technique structuré</li>
+          <li data-en="Conceptual data model, relational schema and business rules"
+            data-fr="Conception du MCD, du schéma relationnel et des règles de gestion">Conception du MCD, du schéma
+            relationnel et des règles de gestion</li>
+          <li data-en="SQL scripts for creation, insertion and querying"
+            data-fr="Scripts SQL de création, d'insertion et d'interrogation des données">Scripts SQL de création,
+            d'insertion et d'interrogation des données</li>
+          <li data-en="Linux installation and configuration on Raspberry Pi"
+            data-fr="Installation et configuration de Linux sur Raspberry Pi">Installation et configuration de Linux sur
+            Raspberry Pi</li>
+          <li data-en="Used a data generator to simulate a realistic environment"
+            data-fr="Utilisation d'un générateur de données pour simuler un environnement réaliste">Utilisation d'un
+            générateur de données pour simuler un environnement réaliste</li>
+          <li data-en="Structured technical report" data-fr="Rédaction d'un rapport technique structuré">Rédaction d'un
+            rapport technique structuré</li>
         </ul>
-        <p>Ce projet m'a appris à travailler sur un cycle complet de base de données — de l'analyse des besoins jusqu'à
-          la mise en œuvre physique — en documentant chaque choix technique de manière rigoureuse.</p>
+        <p data-en="This project taught me to work through a complete database lifecycle — from requirements analysis to physical implementation — while documenting every technical decision rigorously."
+          data-fr="Ce projet m'a appris à travailler sur un cycle complet de base de données — de l'analyse des besoins jusqu'à la mise en œuvre physique — en documentant chaque choix technique de manière rigoureuse.">
+          Ce projet m'a appris à travailler sur un cycle complet de base de données — de l'analyse des besoins jusqu'à
+          la mise en œuvre physique — en documentant chaque choix technique de manière rigoureuse.
+        </p>
       </div>
     </div>
   </div>
@@ -391,21 +451,37 @@
   <div class="modal-overlay" id="modal-cwad" onclick="closeModalOutside(event, 'modal-cwad')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-cwad')">✕</button>
-      <div class="modal-title">Développement Web &amp; Algorithmique</div>
+      <div class="modal-title" data-en="Web Dev &amp; Algorithmics" data-fr="Développement Web &amp; Algorithmique">
+        Développement Web &amp; Algorithmique</div>
       <div class="modal-body">
-        <p>Dans le cadre du module CWAD (Communication Web et Accessibilité Digitale), nous avons conçu un site web
+        <p data-en="As part of the CWAD module (Web Communication and Digital Accessibility), we designed a static website around a fictional medieval theme park — dragons, princesses, tournaments and fortresses. The idea was to build a visually coherent universe and make it accessible according to web standards."
+          data-fr="Dans le cadre du module CWAD (Communication Web et Accessibilité Digitale), nous avons conçu un site web statique autour d'un parc de loisirs médiéval fictif — dragons, princesses, tournois et forteresses. L'idée était de bâtir un univers cohérent visuellement et de le rendre accessible selon les standards du web.">
+          Dans le cadre du module CWAD (Communication Web et Accessibilité Digitale), nous avons conçu un site web
           statique autour d'un parc de loisirs médiéval fictif — dragons, princesses, tournois et forteresses. L'idée
-          était de bâtir un univers cohérent visuellement et de le rendre accessible selon les standards du web.</p>
+          était de bâtir un univers cohérent visuellement et de le rendre accessible selon les standards du web.
+        </p>
         <ul class="modal-list">
-          <li>Création d'une identité visuelle complète (palette, typographie, logo)</li>
-          <li>Développement d'un site statique HTML/CSS respectant les standards d'accessibilité</li>
-          <li>Contenu structuré et narratif autour du thème médiéval</li>
-          <li>Rédaction d'un rapport technique sur les choix graphiques et structurels</li>
-          <li>Soutenance orale avec maquette fonctionnelle</li>
+          <li data-en="Full visual identity (colour palette, typography, logo)"
+            data-fr="Création d'une identité visuelle complète (palette, typographie, logo)">Création d'une identité
+            visuelle complète (palette, typographie, logo)</li>
+          <li data-en="Static HTML/CSS site following accessibility standards"
+            data-fr="Développement d'un site statique HTML/CSS respectant les standards d'accessibilité">Développement
+            d'un site statique HTML/CSS respectant les standards d'accessibilité</li>
+          <li data-en="Structured narrative content built around the medieval theme"
+            data-fr="Contenu structuré et narratif autour du thème médiéval">Contenu structuré et narratif autour du
+            thème médiéval</li>
+          <li data-en="Technical report on graphic and structural choices"
+            data-fr="Rédaction d'un rapport technique sur les choix graphiques et structurels">Rédaction d'un rapport
+            technique sur les choix graphiques et structurels</li>
+          <li data-en="Oral presentation with a functional mockup"
+            data-fr="Soutenance orale avec maquette fonctionnelle">Soutenance orale avec maquette fonctionnelle</li>
         </ul>
-        <p>En parallèle, j'ai programmé un jeu vidéo en C++ en binôme pour comparer différentes approches algorithmiques
+        <p data-en="In parallel, I programmed a C++ video game with a partner to compare different algorithmic approaches on the same problem — an exercise that showed me how much implementation choices can radically change performance."
+          data-fr="En parallèle, j'ai programmé un jeu vidéo en C++ en binôme pour comparer différentes approches algorithmiques sur un même problème — un exercice qui m'a fait réaliser combien les choix d'implémentation peuvent changer radicalement les performances.">
+          En parallèle, j'ai programmé un jeu vidéo en C++ en binôme pour comparer différentes approches algorithmiques
           sur un même problème — un exercice qui m'a fait réaliser combien les choix d'implémentation peuvent changer
-          radicalement les performances.</p>
+          radicalement les performances.
+        </p>
       </div>
     </div>
   </div>
@@ -414,16 +490,61 @@
   <div class="modal-overlay" id="modal-cgj" onclick="closeModalOutside(event, 'modal-cgj')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-cgj')">✕</button>
-      <div class="modal-title">Code Game Jam 2025</div>
+      <div class="modal-title" data-en="Code Game Jam 2025" data-fr="Code Game Jam 2025">Code Game Jam 2025</div>
       <div class="modal-body">
-        <p>Lors de la Code Game Jam 2025, notre équipe de 5 a eu 26 heures pour concevoir et livrer un jeu vidéo
-          complet, de A à Z, autour d'un thème révélé au lancement. Ce format marathon nous a forcés à couvrir toutes
-          les étapes en accéléré : brainstorming, répartition des tâches, développement, tests et présentation finale.
+        <p data-en="At Code Game Jam 2025, our team of 5 had 26 hours to design and deliver a complete video game from scratch, around a theme revealed at launch. This marathon format forced us to cover every stage at speed: brainstorming, task splitting, development, testing and final presentation."
+          data-fr="Lors de la Code Game Jam 2025, notre équipe de 5 a eu 26 heures pour concevoir et livrer un jeu vidéo complet, de A à Z, autour d'un thème révélé au lancement. Ce format marathon nous a forcés à couvrir toutes les étapes en accéléré : brainstorming, répartition des tâches, développement, tests et présentation finale.">
+          Lors de la Code Game Jam 2025, notre équipe de 5 a eu 26 heures pour concevoir et livrer un jeu vidéo complet,
+          de A à Z, autour d'un thème révélé au lancement. Ce format marathon nous a forcés à couvrir toutes les étapes
+          en accéléré : brainstorming, répartition des tâches, développement, tests et présentation finale.
         </p>
         <img src="assets/CGJCover.jpeg" alt="Code Game Jam 2025" style="width:100%; margin: 28px 0;">
-        <p>Ce sprint créatif m'a montré ce que ça veut dire de livrer sous pression — prendre des décisions rapides,
+        <p data-en="This creative sprint showed me what it really means to ship under pressure — making fast decisions, adapting in real time, and finding the balance between ambition and what's actually feasible. One of the most intense experiences of the year."
+          data-fr="Ce sprint créatif m'a montré ce que ça veut dire de livrer sous pression — prendre des décisions rapides, s'adapter en temps réel, et trouver l'équilibre entre ambition et faisabilité. Une des expériences les plus stimulantes de l'année.">
+          Ce sprint créatif m'a montré ce que ça veut dire de livrer sous pression — prendre des décisions rapides,
           s'adapter en temps réel, et trouver l'équilibre entre ambition et faisabilité. Une des expériences les plus
-          stimulantes de l'année.</p>
+          stimulantes de l'année.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Performative Snake -->
+  <div class="modal-overlay" id="modal-snake" onclick="closeModalOutside(event, 'modal-snake')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-snake')">✕</button>
+      <div class="modal-title" data-en="Performative Male" data-fr="Performative Male">Performative Male</div>
+      <div class="modal-body">
+        <p data-en="A solo project, freely inspired by Snake. The concept is simple: collect matcha to grow your trail, avoid crashing into yourself. The name and visual universe are intentionally absurd — that's part of coding for fun."
+          data-fr="Un jeu développé en solo, librement inspiré de Snake. Le concept est simple : collecter du matcha pour faire grandir son trail, éviter de se percuter. Le nom et l'univers visuel sont intentionnellement absurdes — c'est aussi ça, coder pour le fun.">
+          Un jeu développé en solo, librement inspiré de Snake. Le concept est simple : collecter du matcha pour faire
+          grandir son trail, éviter de se percuter. Le nom et l'univers visuel sont intentionnellement absurdes — c'est
+          aussi ça, coder pour le fun.
+        </p>
+        <img src="assets/start-screen.png" alt="start-screen.png — capture de l'écran de démarrage"
+          style="width:100%; margin: 28px 0;">
+        <ul class="modal-list">
+          <li data-en="Snake mechanic rebuilt from scratch" data-fr="Mécanique Snake reconstruite from scratch">
+            Mécanique Snake reconstruite from scratch</li>
+          <li data-en="Score, best score and collision management"
+            data-fr="Gestion du score, du meilleur score et des collisions">Gestion du score, du meilleur score et des
+            collisions</li>
+          <li data-en="Keyboard controls (arrows + WASD)" data-fr="Contrôles clavier (flèches + WASD)">Contrôles clavier
+            (flèches + WASD)</li>
+          <li data-en="Deployed on GitHub Pages" data-fr="Déployé sur GitHub Pages">Déployé sur GitHub Pages</li>
+        </ul>
+        <img src="assets/gameplay.png" alt="gameplay.png — capture du gameplay" style="width:100%; margin: 28px 0;">
+        <p data-en="This personal project let me explore game logic in pure JavaScript — no framework — and finish something entirely on my own from start to finish."
+          data-fr="Ce projet personnel m'a permis d'explorer la logique de jeu en JavaScript pur, sans framework — et de finir quelque chose du début à la fin, tout seul.">
+          Ce projet personnel m'a permis d'explorer la logique de jeu en JavaScript pur, sans framework — et de finir
+          quelque chose du début à la fin, tout seul.
+        </p>
+        <div style="display:flex; gap:12px; margin-top: 8px; flex-wrap: wrap;">
+          <a href="https://fancyraspberry.github.io/performative-snake/" target="_blank" rel="noopener"
+            class="modal-btn-details" data-en="🎮 Play →" data-fr="🎮 Jouer →">🎮 Jouer →</a>
+          <a href="https://github.com/fancyraspberry/performative-snake" target="_blank" rel="noopener"
+            class="modal-btn-details" data-en="GitHub →" data-fr="GitHub →">GitHub →</a>
+        </div>
       </div>
     </div>
   </div>
